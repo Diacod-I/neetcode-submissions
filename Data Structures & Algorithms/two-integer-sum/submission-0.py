@@ -5,6 +5,6 @@ class Solution:
             complement = target - nums[i]
             if complement in hashMap:
                 return sorted([i, hashMap[complement]])
+            
             hashMap[nums[i]] = i
-        
-        return []
+        return [] 
